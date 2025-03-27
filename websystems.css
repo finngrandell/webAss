@@ -22,7 +22,6 @@ a:active{
     flex-direction: column;
     gap: 0.5em;
     height: 100%;
-    width: calc(100%-1em);
     background-color: #F6F1DE;
     overflow: auto;
 }
