@@ -1,5 +1,4 @@
 * {
-    box-sizing: border-box;
     font-family: Verdana;
     font-size: 20px;
 }
@@ -59,6 +58,7 @@ a:active{
     min-height: 10em;
     margin: 1em;
     flex: 1;
+    justify-content: center;
 }
 
 .column {
@@ -89,6 +89,8 @@ a:active{
     width: 100%;
     flex: 1;
     padding: 0.5em;
+    align-items: center;
+    justify-content: center;
 }
 
 .separatedImage {
@@ -97,6 +99,15 @@ a:active{
 
 #fullstack {
     width: 20em;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#descriptionStyles {
+    flex-direction: column;
 }
 
 
