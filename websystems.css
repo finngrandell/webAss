@@ -22,14 +22,26 @@ a:active{
     flex-direction: column;
     gap: 0.5em;
     height: 100%;
+    width: 100%;
     background-color: #F6F1DE;
     overflow: auto;
+    margin: 0;
 }
 
 .menu {
     list-style-type: none;
     text-align: center;
-    background-color: #8AB2A6;
+    background-color: #3E3F5B;
+    position: sticky;
+    top: 0;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a {
+    color: white;
 }
 
 .menuListItems {
@@ -39,7 +51,6 @@ a:active{
 
 #body {
     background-color: #F6F1DE;
-    border: 1px solid black;
     flex-direction: column;
     flex-grow: 1;
 }
@@ -50,12 +61,11 @@ a:active{
 
 .row {
     display: flex;
-    gap: 1em;
+    /* gap: 1em; */
     background-color: #8AB2A6;
-    border: 1px solid black;
     height: auto;
     min-height: 10em;
-    margin: 1em;
+    /* margin: 1em; */
     flex: 1;
     justify-content: center;
 }
@@ -65,7 +75,6 @@ a:active{
     background-color: #F6F1DE;
     padding: 1em;
     box-sizing: border-box;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,14 +86,12 @@ a:active{
 }
 
 .carousel {
-    margin: 1em;
+    /* margin: 1em; */
     height: 20em;
     background-color: #F6F1DE;
-    border: 1px solid black;
 }
 
 .insertedRow {
-    border: 1px solid black;
     width: 100%;
     flex: 1;
     padding: 0.5em;
@@ -92,21 +99,24 @@ a:active{
     justify-content: center;
 }
 
-.separatedImage {
-    margin: 1em;
-}
+/* .separatedImage {
+    margin: 1em; 
+} */
 
 #fullstack {
     width: 20em;
 }
 
 table, th, td {
-    border: 1px solid black;
     border-collapse: collapse;
 }
 
 #descriptionStyles {
     flex-direction: column;
+}
+
+#selectedPage {
+    background: #8AB2A6;
 }
 
 
