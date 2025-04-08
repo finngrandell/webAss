@@ -1,11 +1,16 @@
 * {
     font-family: Verdana;
     font-size: 20px;
+    box-sizing: border-box;
 }
 
 a {
     color: black;
     text-decoration: none;
+}
+
+p {
+    padding: 0.5em;
 }
 
 a:hover {
@@ -17,10 +22,18 @@ a:active{
     color: blue;
 }
 
+li {
+    border-radius: 10px;
+}
+
+img {
+    width: 30em;
+}
+
 #container {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    /* gap: 0.5em; */
     height: 100%;
     width: 100%;
     background-color: #F6F1DE;
@@ -29,15 +42,19 @@ a:active{
 }
 
 .menu {
-    list-style-type: none;
-    text-align: center;
-    background-color: #3E3F5B;
+    background-color: #410445;
     position: sticky;
     top: 0;
-    height: 5em;
+    height: 8em;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.menu ul {
+    list-style-type: none;
+    text-align: center;
+    margin-right: 1em;
 }
 
 .menu a {
@@ -46,7 +63,13 @@ a:active{
 
 .menuListItems {
     display: inline;
-    padding: 0.5em;
+    padding: 1em;
+}
+
+.logo {
+    width: 6em;
+    border: 1px solid white;
+    margin-left: 1em;
 }
 
 #body {
@@ -61,13 +84,66 @@ a:active{
 
 .row {
     display: flex;
-    /* gap: 1em; */
-    background-color: #8AB2A6;
+    flex-direction: column;
+    background-color: #C68EFD;
     height: auto;
     min-height: 10em;
-    /* margin: 1em; */
-    flex: 1;
+    justify-content: space-between;
+    color: white;
+    font-size: 26px;
+}
+
+.altrow {
+    display: flex;
+    background-color: #F6F1DE;
+    height: auto;
+    min-height: 10em;
+    justify-content: space-between;
+    font-size: 26px;
+}
+
+.full {
+    width: 100%;
+}
+
+#centerAlign {
+    text-align: center;
+}
+
+#hi {
+    font-size: 4em;
+}
+
+.split {
+    display: flex;
     justify-content: center;
+    flex: 1;
+}
+
+.subtext {
+    font-size: 1.5em;
+}
+
+#seventy {
+    margin-left: 0.5em;
+    flex: 7;
+}
+
+#thirty {
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+    margin-right: 0.5em;
+}
+
+#fifty {
+    flex: 5;
+}
+
+.center {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .column {
@@ -116,7 +192,7 @@ table, th, td {
 }
 
 #selectedPage {
-    background: #8AB2A6;
+    background: #E9A5F1;
 }
 
 
