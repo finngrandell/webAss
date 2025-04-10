@@ -68,7 +68,6 @@ img {
 
 .logo {
     width: 6em;
-    border: 1px solid white;
     margin-left: 1em;
 }
 
@@ -119,6 +118,7 @@ img {
 .split {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex: 1;
 }
 
@@ -144,6 +144,7 @@ img {
 
 #forty {
     flex: 4;
+    margin-right: 1em;
 }
 
 #fifty {
@@ -183,6 +184,63 @@ img {
     margin-right: 1em;
 }
 
+#subtitle {
+    font-size: 3em;
+}
+
+#arduino {
+    font-size: 1.5em;
+}
+
+#highschool {
+    width: 20em;
+}
+
+#PC {
+    font-size: 3em;
+}
+
+#Specs {
+    margin-left: 1em;
+}
+
+#wow {
+    margin-left: 10%;
+}
+
+#amazing {
+    margin-left: 60%;
+}
+
+#incredible {
+    margin-left: 25%;
+}
+
+.pcText {
+    font-size: 1.5em;
+}
+
+.pcText:hover {
+    font-size: 2em;
+    color: #410445;
+}
+
+#developed {
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
+#cyber {
+    font-size: 1.5em;
+}
+
+#internship {
+    font-size: 1.5em;
+}
+
+#priorities {
+    font-size: 1.2em;
+}
 
 .column {
     flex: 1;
