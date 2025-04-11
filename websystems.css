@@ -86,7 +86,7 @@ img {
     flex-direction: column;
     background-color: #C68EFD;
     height: auto;
-    min-height: 10em;
+    min-height: 2em;
     justify-content: space-between;
     color: white;
     font-size: 26px;
@@ -241,6 +241,20 @@ img {
 #priorities {
     font-size: 1.2em;
 }
+
+
+#overallpics1{
+    width: 50%;
+}
+
+#overallpics2 {
+    width: 30%;
+}
+
+
+
+
+
 
 .column {
     flex: 1;

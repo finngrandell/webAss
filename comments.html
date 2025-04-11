@@ -21,18 +21,75 @@
             </div>
 
             <div class="altrow">
-                <div class="center">
-                    <h3 class="subtext">Overall Structure</h3>
-                    <p>I tried to design the website based off a few core modular div elements.
-                        The menu bar stays consisent at the top of each web page to provide a 
-                        standard navigation system. For all of my spacings I decided to either use 
-                        "%" or "em" depending on the context. I created a "row" div element which 
-                        has a minimum height of 10em and has a green background which can house
-                        "column" elements. These "column" divs use the CSS "flex" property and thus
-                        have a variable width depending on how many columns are in each row (2 columns
-                        will take 50% of the space each, 3 = 33%, etc.). I also created an "insertedRow" 
-                        element that can be placed inside "row" divs to create sub-rows. These can be seen
-                        to the left of this column!</p>
+                <div class="split">
+                    <div id="fifty">
+                        <div class="center"><h3 class="subtext">Overall Structure</h3>
+                            <p>I tried to design the website based off a few core modular div elements.
+                                The menu bar stays consisent at the top of each web page to provide a 
+                                standard navigation system. The logo in the top left redirects the user to the home page
+                                for additional navigation. The menu bar consists of two child elements - the logo image 
+                                and an unordered list of links which point to each web page. I used the "display: inline" 
+                                styling for all list items to ensure they sat side by side. Additionally, the menu container 
+                                div has the styling "justify-content: space-between" which aligns the two elements to the 
+                                left and right side of the div and scales with window size. 
+                                
+                                <br>
+                                <br>
+
+                                For all of my spacings I decided to either use 
+                                "%" or "em" depending on the context to ensure they were scalable. For instance, the bottom 
+                                two images on the right have widths of 50% and 30% respectively to ensure their size is 
+                                determined by the size of their containing div. The "Comments!" block uses em sizing to all font 
+                                sizes remain relative to each other.
+                        </div>
+                    </div>
+                    <div id="fifty">
+                        <div class="center" id="developed">
+                            <div class="full">
+
+                            </div>
+                            <div class="full">
+                                <img src="photos/overall1.png" id="overallpics1"> <!-- UPDATE -->
+                                <img src="photos/overall2.png" id="overallpics2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row"></div>
+
+            <div class="altrow">
+                <div class="split">
+                    <div id="fifty">
+                        <div class="center" id="developed">
+                            <div class="full">
+                                <img src="photos/overall1.png" id="overallpics1"> <!-- UPDATE -->
+                                <img src="photos/overall2.png" id="overallpics2">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fifty">
+                        <div class="center">
+                            <p>One of my core div elements was the "row" and "altrow" divs. They have the same
+                                essential styles, except "row" has a light purple background color whilst "altrow"
+                                has an off-white color. This allowed me to quickly divide the web pages into different 
+                                blocks that stood out from one another. For blocks which required content to be arranged
+                                into separate columns, I utilised CSS's 'flexbox' property. By defining a div called 'split'
+                                which set the display type to flex, I could assign child divs different flex values depending 
+                                on how much space I wanted them to take up. For instance, this "altrow" div contains a "split" 
+                                div that splits the space into two equal columns, each taking 50% of the available space, as seen 
+                                in the HTML and CSS code on the left.
+
+                                <br>
+                                <br>
+
+                                I also created consistent styling for page headers, such as "Comments!" seen above, and section 
+                                headers, such as "Index Page Structure" seen below. These styles remained consistent across all web 
+                                pages to ensure continuity and modular expansion.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -173,128 +230,9 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="column">
-                    <div class="insertedRow">
-                        <img src="menu.png" alt="MENU BAR">
-                        <p><i>The menu bar stays consistent across all pages!</i></p>
-                    </div>
-                    <div class="insertedRow">
-                        <img src="row.png" alt="ROW DIV ON FUTURE PAGE">
-                        <p><i>A "row" div containing two "columns" seen on the Future page.</i></p>
-                    </div>
-                </div>
-                <div class="column">
-                    <h2>OVERALL STRUCTURE / FUNCTION</h2>
-                    <p>I tried to design the website based off a few core modular div elements.
-                        The menu bar stays consisent at the top of each web page to provide a 
-                        standard navigation system. For all of my spacings I decided to either use 
-                        "%" or "em" depending on the context. I created a "row" div element which 
-                        has a minimum height of 10em and has a green background which can house
-                        "column" elements. These "column" divs use the CSS "flex" property and thus
-                        have a variable width depending on how many columns are in each row (2 columns
-                        will take 50% of the space each, 3 = 33%, etc.). I also created an "insertedRow" 
-                        element that can be placed inside "row" divs to create sub-rows. These can be seen
-                        to the left of this column!
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <h2>STRUCTURE OF THE INDEX PAGE</h2>
-                    <p>The index page utilises a h2 tag below the menu bar to introduce the user to the page.
-                        It then uses a "row" div with three columns to talk about my history, hobbies and this website.
-                        Each of these sections is brief (and factual) and below this, I am working on developing a CSS 
-                        image carousel - stay tuned!
-                    </p>
-                </div>
-                <div class="column">
-                    <h2>STRUCTURE OF THE PAST PAGE</h2>
-                    <p>Underneath the Past page's title, another row div holds two columns. The left hand column has three
-                        img tags each with an image that supports the content to the right. If the site works as intended, it 
-                        should display an Arduino, a screenshot of a program I wrote, and a collage of multiple programming languages. 
-                        The right hand column contains three "insertedRow" elements, which each holds a different stage in my programming 
-                        journey, from primary school through high school until now!
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <h2>STRUCTURE OF THE FUTURE PAGE</h2>
-                    <p>The Future page simply holds a title and two row divs each with two columns. I describe my internship in the first 
-                        row and my goal to pursue full stack development in the second column. I alternated where I placed the text and images
-                        in the columns to make the page feel less monotonous and add to the graphic design of the site.
-                    </p>
-                </div>
-                <div class="column">
-                    <h2>STRUCTURE OF THE COMMENTS PAGE</h2>
-                    <p>This page was built modularly like all of my other web pages! There are five row divs, and four of them are split into 
-                        two columns. The first three rows describe the overall structure of the website, as well as the individual structure of each of the web pages 
-                        (including this one). Below them is a single row with one column that covers the styles used across my website. Finally, there is a discussion 
-                        of my graphical design considerations as well as some functional information with the use of the alt tag and how the site works when CSS is turned off.
-                    </p>
-                </div>
-            </div>
-            <div class="row" id="descriptionStyles">
-                <h2>DESCRIPTION OF STYLES</h2>
-                <table>
-                    <tr>
-                        <th>STYLE</th>
-                        <th>SELECTOR</th>
-                        <th>WHAT IT DOES</th>
-                        <th>WHERE WAS IT USED?</th>
-                    </tr>
-                    <tr>
-                        <td>*</td>
-                        <td>Universal</td>
-                        <td>All font is Verdana; 20px size</td>
-                        <td>Everywhere...</td>
-                    </tr>
-                    <tr>
-                        <td>a</td>
-                        <td>Element</td>
-                        <td>Font color black; no underline/ bold/ italics</td>
-                        <td>On all "a" tags</td>
-                    </tr>
-                    <tr>
-                        <td>a:hover / a:active</td>
-                        <td>Pseudo-Class</td>
-                        <td>When hovered over, underline / italics appear; when clicked on, turns blue</td>
-                        <td>On all "a" tags, but only when the state is triggered</td>
-                    </tr>
-                    <tr>
-                        <td>table, th, td</td>
-                        <td>Element</td>
-                        <td>Creates 1px solid black border; collapses cell borders into one</td>
-                        <td>On all table, th and td tags.</td>
-                    </tr>
-                    <tr>
-                        <td>.menu</td>
-                        <td>Class</td>
-                        <td>Gets rid of pre-stylings; centers text; sets green background color</td>
-                        <td>On all menu bars.</td>
-                    </tr>
-                    <tr>
-                        <td>.menuListItems</td>
-                        <td>Class</td>
-                        <td>Gets rid of line break between list items; sets 0.5em of padding</td>
-                        <td>On all links in the menu bars.</td>
-                    </tr>
-                    <tr>
-                        <td>There is many more....</td>
-                        <td>...</td>
-                        <td>...</td>
-                        <td>...</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <h2>GRAPHICAL DESIGN OF SITE</h2>
-                </div>
-                <div class="column">
-                    <h2>ALT TAG AND HOW SITE WORKS WHEN CSS IS TURNED OFF</h2>
-                </div>
+            <div class="menu">
+                <h3 class="subtext" id="footerText">Made by Finn</h3>
+                <h3 class="subtext" id="footerText">Web Systems WebAss Autumn Session 2025</h3>
             </div>
         </div>
     </body>
