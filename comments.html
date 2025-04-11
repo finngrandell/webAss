@@ -29,7 +29,9 @@
                                 standard navigation system. The logo in the top left redirects the user to the home page
                                 for additional navigation. The menu bar consists of two child elements - the logo image 
                                 and an unordered list of links which point to each web page. I used the "display: inline" 
-                                styling for all list items to ensure they sat side by side. Additionally, the menu container 
+                                styling for all list items to ensure they sat side by side. With the "a:hover" styling, I 
+                                made it such that when the cursor hovers over the links in the menu bar, they are styled 
+                                with italics and an underline. Additionally, the menu container 
                                 div has the styling "justify-content: space-between" which aligns the two elements to the 
                                 left and right side of the div and scales with window size. 
                                 
@@ -100,7 +102,33 @@
             <div class="altrow">
                 <div class="split">
                     <div id="fifty">
-                        <p>LOREM IPSUM</p>
+                        <p>The Index page starts with a page title - "Hi!", inside a "row" div. 
+                            The next two subtitles are in "split" div inside an "altrow". The first
+                            subtext takes up seventy percent of the parent's width, using "flex: 7", and
+                            the other takes up 30%.
+
+                            <br> <br>
+
+                            Then comes another "split" div, with a 50/50 split using the "fifty" id. On 
+                            the left side is a "center" div which centers all content vertically and stacks
+                            them in a column using display: inline instead of flex. A h3 tag and an image are contained.
+                            The right side has a p tag containing text describing my background and life in Dubbo.
+
+                            <br> <br>
+
+                            Below this is another 50/50 "split" div, with the left side containing a simple block of text 
+                            enclosed in a "p" tag. On the right side is a h3 tag with class subtext (bolding and increasing font size)
+                            with the string "&lt;--". This is because the less than sign is reserved for tag creation in HTML, and thus 
+                            "& l t ;" is needed (without the spaces). Below this is another nested 50/50 "split" div, with two ordered lists 
+                            of my favorite albums and games of all time respectively.
+
+                            <br> <br>
+
+                            Another "row" tag contains a centered subtitle (with class "subtext") and a simple p tag with no styling, thus 
+                            spanning the full width of the div. Another subtitle is placed below, above an "altrow" div containing class 
+                            "carousel", which hosts 4 "img" tags. The "carousel" class sets all images within it to be 20% width of the parent div, 
+                            but upon hover, they grow to 30% width, creating an interactive element to the webpage.
+                        </p>
                     </div>
                     <div id="fifty">
                         <p>IMAGE</p>
@@ -118,7 +146,32 @@
                         <p>LOREM IPSUM</p>
                     </div>
                     <div id="fifty">
-                        <p>IMAGE</p>
+                        <p>All pages henceforth have a page header with the same styling as the index page one, 
+                            this one says "My past with computing". Below this is an "altrow" tag that has a 50/50 
+                            split. On the left side is a div with class "center" to center all items vertically and horizontally, 
+                            containing a h3 tag with class "subtext" and a baby photo of myself (using the "img" tag).
+
+                            <br> <br>
+
+                            Below is a "row' div with a "High School" subtitle spanning the full width of the div. Underneath is 
+                            an "altrow" that has a 40/20/40 split using the ids "forty" and "twenty" which set "flex: 4" and "flex: 2"
+                            respectively. The left and rightmost divs contain text, whilst the middle contains an image. Another full width 
+                            subtitle follows labelled "Personal" with an "altrow" below it. This also has a 40/20/40 split.
+
+                            <br> <br>
+
+                            The leftmost div contains 3 "p" tags, each with a different horizontal alignment depending on their ids.
+                            Each of these p tags also grows in size and changes color to purple when the user hovers over it, using 
+                            the :hover attribute, to promote interactivity. The middle div contains an image whilst the rightmost contains 
+                            a h3 with class "subtext" stating "My PC!""
+
+                            <br> <br>
+
+                            Below this is a 50/50 "split" div - on the left side is a h3 with class "subtext" and on the right is an undordered 
+                            list utilising the "ul" tag. Each "li" (list item) has a different component of my PC in it - I chose an unordered 
+                            list because the order of the components don't matter. Below is an "altrow" with two centered components - a h3 tag 
+                            and a p tag.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -130,7 +183,12 @@
             <div class="altrow">
                 <div class="split">
                     <div id="fifty">
-                        <p>LOREM IPSUM</p>
+                        <p>The Future page's heading reads "My future with computing". Below this is an "altrow" tag with a h3 and a 
+                            centered p tag inside. There is a subtitle called "Full Stack Development" above a 70/30 "split" div, with 
+                            the left side containing text and the right side having an image. Below this is another subtitle called 
+                            "Things I want to learn" with another 50/50 split div below it. On the left side is a centered h2 and an 
+                            ordered list of programming skills I wish to upskill in. This is ordered because it is ranked in terms 
+                            of importance, as elaborated on the right side. </p>
                     </div>
                     <div id="fifty">
                         <p>IMAGE</p>
@@ -158,7 +216,7 @@
             </div>
 
             <div class="altrow">
-                <table>
+                <table class="full" id="centerAlign">
                     <tr>
                         <th>STYLE</th>
                         <th>SELECTOR</th>
