@@ -33,7 +33,6 @@ img {
 #container {
     display: flex;
     flex-direction: column;
-    /* gap: 0.5em; */
     height: 100%;
     width: 100%;
     background-color: #F6F1DE;
@@ -200,10 +199,6 @@ img {
     font-size: 3em;
 }
 
-#Specs {
-    margin-left: 1em;
-}
-
 #wow {
     margin-left: 10%;
 }
@@ -230,18 +225,9 @@ img {
     font-size: 1.5em;
 }
 
-#cyber {
-    font-size: 1.5em;
-}
-
-#internship {
-    font-size: 1.5em;
-}
-
 #priorities {
     font-size: 1.2em;
 }
-
 
 #overallpics1{
     width: 50%;
@@ -251,50 +237,15 @@ img {
     width: 30%;
 }
 
-
-
-
-
-
-.column {
-    flex: 1;
-    background-color: #F6F1DE;
-    padding: 1em;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.column img {
-    width: 12em;
-}
-
-
-.insertedRow {
-    width: 100%;
-    flex: 1;
-    padding: 0.5em;
-    align-items: center;
-    justify-content: center;
-}
-
-/* .separatedImage {
-    margin: 1em; 
-} */
-
 #fullstack {
     width: 20em;
 }
 
 table, th, td {
     border-collapse: collapse;
+    border: 1px solid black;
 }
 
-#descriptionStyles {
-    flex-direction: column;
-}
 
 #selectedPage {
     background: #E9A5F1;

@@ -43,6 +43,8 @@
                                 two images on the right have widths of 50% and 30% respectively to ensure their size is 
                                 determined by the size of their containing div. The "Comments!" block uses em sizing to all font 
                                 sizes remain relative to each other.
+
+                                <!-- BR TAG AND ALT TAG AND LOGO AND UPDATE INDEX PAGE TO BE CONSISTENT -->
                         </div>
                     </div>
                     <div id="fifty">
@@ -203,10 +205,24 @@
             <div class="altrow">
                 <div class="split">
                     <div id="fifty">
-                        <p>LOREM IPSUM</p>
+                        <p>LOREM IPSUM
+                        </p>
                     </div>
                     <div id="fifty">
-                        <p>IMAGE</p>
+                        <p>The comments page is characterised by the "Comments!" page heading, followed by 5 similar groups of blocks.
+                            Each has a "row" div dedicated to a page (Index/Past/Future/Comments), or in the case of the first "row", 
+                            a subtitle called "Overall Structure". There will be descriptive text on the left and corresponding HTML and CSS 
+                            screenshots on the right, or vice versa. The position of text and images alternate as the page goes on to break 
+                            up the flow of the page and keep readers interested. Each "altrow" is split 50/50, and the images are applied 
+                            specific CSS stylings to ensure they scale properly with the webpage.
+
+                            <br> <br>
+
+                            Below this is a subtitle in a "row" div called "Styles Used" - the subsequent "altrow" contains a table of all the 
+                            styles used in the websystems.css stylesheet, along with their selector, what it does, and where it can be found. This 
+                            table is enclosed in a "table" tag and uses "th" or "table head" tags to format the heads of each column separately to the data. 
+                            Finally, there is another subtitle of "Graphic Design Choices" and an "altrow" containing a centered "p" tag detailing the graphic 
+                            design choices made throughout the website.</p>
                     </div>
                 </div>
             </div>
@@ -233,38 +249,272 @@
                         <td>a</td>
                         <td>Element</td>
                         <td>Font color black; no underline/ bold/ italics</td>
-                        <td>On all "a" tags</td>
+                        <td>Menu links</td>
                     </tr>
                     <tr>
                         <td>a:hover / a:active</td>
                         <td>Pseudo-Class</td>
                         <td>When hovered over, underline / italics appear; when clicked on, turns blue</td>
-                        <td>On all "a" tags, but only when the state is triggered</td>
+                        <td>Menu links</td>
                     </tr>
                     <tr>
                         <td>table, th, td</td>
                         <td>Element</td>
                         <td>Creates 1px solid black border; collapses cell borders into one</td>
-                        <td>On all table, th and td tags.</td>
+                        <td>In this very table!</td>
                     </tr>
                     <tr>
                         <td>.menu</td>
                         <td>Class</td>
-                        <td>Gets rid of pre-stylings; centers text; sets green background color</td>
-                        <td>On all menu bars.</td>
+                        <td>Sticky top bar with centered content; dark purple background</td>
+                        <td>At the top of every page</td>
                     </tr>
                     <tr>
                         <td>.menuListItems</td>
                         <td>Class</td>
-                        <td>Gets rid of line break between list items; sets 0.5em of padding</td>
-                        <td>On all links in the menu bars.</td>
+                        <td>Displays menu links inline with 1em of padding</td>
+                        <td>On every link between pages in the menu</td>
                     </tr>
                     <tr>
-                        <td>There is many more....</td>
-                        <td>...</td>
-                        <td>...</td>
-                        <td>...</td>
+                        <td>.menu ul</td>
+                        <td>Class + Element</td>
+                        <td>Removes bullets; centers text; right margin of 1em</td>
+                        <td>On every link between pages in the menu</td>
                     </tr>
+                    <tr>
+                        <td>.menu a</td>
+                        <td>Class + Element</td>
+                        <td>Turns menu link text white</td>
+                        <td>On every link between pages in the menu</td>
+                    </tr>
+                    <tr>
+                        <td>p</td>
+                        <td>Element</td>
+                        <td>0.5em padding to all paragraphs</td>
+                        <td>Anywhere there is text but isn't a section header / subtitle e.g. below "Graphic Design Choices" and "Overall Structure" under this table</td>
+                    </tr>
+                    <tr>
+                        <td>li</td>
+                        <td>Element</td>
+                        <td>10px rounded corners to list items</td>
+                        <td>Actually applies to all lists throughout the website; only visible with the borders shown in the menu links</td>
+                    </tr>
+                    <tr>
+                        <td>img</td>
+                        <td>Element</td>
+                        <td>Ddefault image width 30em</td>
+                        <td>Anywhere where there is an image</td>
+                    </tr>
+                    <tr>
+                        <td>#container</td>
+                        <td>ID</td>
+                        <td>Creates flex display; column flex direction; creates scrollbar</td>
+                        <td>Applies to all visible content on each page (contained inside a div with this style)</td>
+                    </tr>
+                    <tr>
+                        <td>.logo</td>
+                        <td>Class</td>
+                        <td>Logo width 6em; left margin of 1em</td>
+                        <td>Seen in logo in top left corner</td>
+                    </tr>
+                    <tr>
+                        <td>#body</td>
+                        <td>ID</td>
+                        <td>Creates standard background color; ensures each element grows to fit its children</td>
+                        <td>Applies to all visible elements on the website</td>
+                    </tr>
+                    <tr>
+                        <td>#body h2</td>
+                        <td>ID + Element</td>
+                        <td>Centers all h2 headers inside body</td>
+                        <td>Applies to all h2 elements visible e.g. the page titles below the menu</td>
+                    </tr>
+                    <tr>
+                        <td>.row</td>
+                        <td>Class</td>
+                        <td>Sets purple background color; min height of 2em; padding of 1em on top and bottom; elements justified to left and right of screen; standard font size of 26px</td>
+                        <td>On every element with a purple background (aka every second block on each webpage)</td>
+                    </tr>
+                    <tr>
+                        <td>.altrow</td>
+                        <td>Class</td>
+                        <td>Same as row; off white background color; padding of 2em on each side</td>
+                        <td>Every block that has an off white background between two purple rows</td>
+                    </tr>
+                    <tr>
+                        <td>.full</td>
+                        <td>Class</td>
+                        <td>Sets element to take up full width of parent</td>
+                        <td>Each section heading e.g. "Styles Used" above (to center)</td>
+                    </tr>
+                    <tr>
+                        <td>#centerAlign</td>
+                        <td>ID</td>
+                        <td>Centers text horizontally</td>
+                        <td>In this table!</td>
+                    </tr>
+                    <tr>
+                        <td>#hi</td>
+                        <td>ID</td>
+                        <td>Sets font size of 4em</td>
+                        <td>Every page heading e.g. "Hi!", "My past with computing", etc.</td>
+                    </tr>
+                    <tr>
+                        <td>.split</td>
+                        <td>Class</td>
+                        <td>Creates a parent div with a flexbox of max width of parent</td>
+                        <td>Used to create the column effect seen in the "... Page Structure" discussions above</td>
+                    </tr>
+                    <tr>
+                        <td>.subtext</td>
+                        <td>Class</td>
+                        <td>Sets font size to 1.5em</td>
+                        <td>On the "Overall Structure" subtitle near the top of this page!</td>
+                    </tr>
+                    <tr>
+                        <td>#seventy</td>
+                        <td>ID</td>
+                        <td>Sets width of element to 70%; left margin of 0.5em</td>
+                        <td>Applies to the "p" tag under "Full Stack Development" on the FUTURE page</td>
+                    </tr>
+                    <tr>
+                        <td>#thirty</td>
+                        <td>ID</td>
+                        <td>Sets width of element to 30%; aligns content to right</td>
+                        <td>Applies to image under "Full Stack Development" on the FUTURE page</td>
+                    </tr>
+                    <tr>
+                        <td>#twenty</td>
+                        <td>ID</td>
+                        <td>Sets width of element to 20%</td>
+                        <td>Applies to the middle image under "High School" on the PAST page</td>
+                    </tr>
+                    <tr>
+                        <td>#forty</td>
+                        <td>ID</td>
+                        <td>Sets width of element to 40%; adds right margin of 1em</td>
+                        <td>Applies to the left most text under "High School" on the PAST page</td>
+                    </tr>
+                    <tr>
+                        <td>#fifty</td>
+                        <td>ID</td>
+                        <td>Sets width of element to 50%</td>
+                        <td>Seen in both columns of the "A brief history of me" section on the INDEX page</td>
+                    </tr>
+                    <tr>
+                        <td>.center</td>
+                        <td>Class</td>
+                        <td>Sets display to inline; centers elements vertically and horizontally</td>
+                        <td>Seen applied to both the "Internship" subtitle and the subsequent paragraph near the top of the PAST page</td>
+                    </tr>
+                    <tr>
+                        <td>#column</td>
+                        <td>ID</td>
+                        <td>Displays children in a vertical column (instead of side by side with flex)</td>
+                        <td>Seen applied to the "row" div containing "My Website" on the INDEX page</td>
+                    </tr>
+                    <tr>
+                        <td>.carousel</td>
+                        <td>Class</td>
+                        <td>Creates a flexbox; 2em of padding; vertically and horizontally centers children; gap of 1.5em between elements</td>
+                        <td>Seen containing four images on the INDEX page</td>
+                    </tr>
+                    <tr>
+                        <td>.carousel img</td>
+                        <td>Class + Element</td>
+                        <td>Sets image width inside the carousel to 20% by default</td>
+                        <td>Applies to all images inside the aforementioned carousel</td>
+                    </tr>
+                    <tr>
+                        <td>.carousel img:hover</td>
+                        <td>Class + Pseudo-Class</td>
+                        <td>Enlarges image to 30% width on hover</td>
+                        <td>Applies to all images inside the aforementioned carousel</td>
+                    </tr>
+                    <tr>
+                        <td>#footerText</td>
+                        <td>ID</td>
+                        <td>Sets text color to white; adds horizontal margins of 1em</td>
+                        <td>Used in the footer on each webpage</td>
+                      </tr>
+                      <tr>
+                        <td>#subtitle</td>
+                        <td>ID</td>
+                        <td>Sets font size to 3em</td>
+                        <td>Applies to all subtitles on webpages e.g. "Full Stack Development" on the FUTURE page</td>
+                      </tr>
+                      <tr>
+                        <td>#arduino</td>
+                        <td>ID</td>
+                        <td>Sets font size to 1.5em</td>
+                        <td>Specifically styles the first paragraph on the PAST page to have text be a similar size to the image</td>
+                      </tr>
+                      <tr>
+                        <td>#highschool</td>
+                        <td>ID</td>
+                        <td>Sets width to 20em</td>
+                        <td>Used for my headshot under "High School" on the PAST page</td>
+                      </tr>
+                      <tr>
+                        <td>#PC</td>
+                        <td>ID</td>
+                        <td>Sets font size to 3em</td>
+                        <td>Used for the "My PC!" subtitle on the PAST page</td>
+                      </tr>
+                      <tr>
+                        <td>#wow, #amazing, #incredible</td>
+                        <td>ID</td>
+                        <td>Adds left margin of 10%/ 60%/ 25%</td>
+                        <td>Used to offset text on the left of the PC image on the PAST page</td>
+                      </tr>
+                      <tr>
+                        <td>.pcText</td>
+                        <td>Class</td>
+                        <td>Sets font size to 1.5em</td>
+                        <td>Used on the words to the left of the PC image on the PAST page</td>
+                      </tr>
+                      <tr>
+                        <td>.pcText:hover</td>
+                        <td>Pseudo-Class</td>
+                        <td>Increases font size to 2em; changes color to purple</td>
+                        <td>Used when hovering over aforementioned PC text</td>
+                      </tr>
+                      <tr>
+                        <td>#developed</td>
+                        <td>ID</td>
+                        <td>Adds margin-left of 1.5em; sets font size to 1.5em</td>
+                        <td>Used in right-most text under "High School" on PAST page</td>
+                      </tr>
+                      <tr>
+                        <td>#priorities</td>
+                        <td>ID</td>
+                        <td>Sets font size to 1.2em</td>
+                        <td>Used on left most list items under "Things I want to learn" on FUTURE page</td>
+                      </tr>
+                      <tr>
+                        <td>#overallpics1</td>
+                        <td>ID</td>
+                        <td>Sets image width to 50%</td>
+                        <td>Used on first leftmost image under "Comments!" on the COMMENTS page</td>
+                      </tr>
+                      <tr>
+                        <td>#overallpics2</td>
+                        <td>ID</td>
+                        <td>Sets image width to 30%</td>
+                        <td>Used on first rightmost image under "Comments!" on the COMMENTS page</td>
+                      </tr>
+                      <tr>
+                        <td>#fullstack</td>
+                        <td>ID</td>
+                        <td>Sets width to 20em</td>
+                        <td>Used to style image under "Full Stack Development" on the FUTURE page</td>
+                      </tr>
+                      <tr>
+                        <td>#selectedPage</td>
+                        <td>ID</td>
+                        <td>Sets background color to pink</td>
+                        <td>Used to indicate active web page</td>
+                      </tr>
                 </table>
             </div>
 
@@ -274,17 +524,22 @@
 
             <div class="altrow">
                 <div class="center">
-                    <h3 class="subtext">Overall Structure</h3>
-                    <p>I tried to design the website based off a few core modular div elements.
-                        The menu bar stays consisent at the top of each web page to provide a 
-                        standard navigation system. For all of my spacings I decided to either use 
-                        "%" or "em" depending on the context. I created a "row" div element which 
-                        has a minimum height of 10em and has a green background which can house
-                        "column" elements. These "column" divs use the CSS "flex" property and thus
-                        have a variable width depending on how many columns are in each row (2 columns
-                        will take 50% of the space each, 3 = 33%, etc.). I also created an "insertedRow" 
-                        element that can be placed inside "row" divs to create sub-rows. These can be seen
-                        to the left of this column!</p>
+                    <p>I knew I wanted to have a website that is created modularly, but I needed a way to distinguish 
+                        the rows. I initially played around with a green/ off white theme, but it lacked a tertiary color to provide 
+                        contrast between the menu bar and background colors for every other row. I settled on a dark purple for the 
+                        menu bars and alternating pink / off white for rows to provide contrast and make it clear where each section 
+                        of each web page began / ended. For insance, pink "row" divs always have a section heading or page heading in them 
+                        to make it clear to the user that a new section is beginning. Off white "altrow" divs contain information, images 
+                        and text.
+
+                        <br> <br>
+
+                        The logo in the top left was created by me on Canva. I wanted something unique to my website that users could 
+                        remember, like the Google logo. I also needed an element that would sit on the left side of the menu bar - otherwise 
+                        it looked far too empty. This logo is linked back to the main page, which is a nice detail. I always try and provide 
+                        plenty of padding for readability and match the size of a block of text to a corresponding image as well as I can 
+                        just so there is minimal wasted space.
+                    </p>
                 </div>
             </div>
 
