@@ -251,8 +251,9 @@ table, th, td {
     background: #E9A5F1;
 }
 
-
-
+.placeSpan {
+    color: purple;
+}
 
 
 

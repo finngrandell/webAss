@@ -42,20 +42,22 @@
                                 "%" or "em" depending on the context to ensure they were scalable. For instance, the bottom 
                                 two images on the right have widths of 50% and 30% respectively to ensure their size is 
                                 determined by the size of their containing div. The "Comments!" block uses em sizing to all font 
-                                sizes remain relative to each other.
-
-                                <!-- BR TAG AND ALT TAG AND LOGO AND UPDATE INDEX PAGE TO BE CONSISTENT -->
-                                 <!-- CAN TALK ABOUT GIT, REMOVE COMMENTS, ADD SCREENSHOTS, ADD ALT TAG, ADD SPAN TAG + MENTION IT -->
+                                sizes remain relative to each other. The "br" tag is used to create readable spacing in text blocks 
+                                by creating paragraph breaks - this can be seen in this very text block! Finally, the alt tag was used 
+                                to provide a short one-to-two word description of what an image would be if it fails to load into a webpage. 
+                                This applies to every image on the website.
                         </div>
                     </div>
                     <div id="fifty">
                         <div class="center" id="developed">
-                            <div class="full">
-
+                            <div>
+                                <img src="photos/overall1.png" alt="HTML SCREENSHOT 1" id="overallpics1">
+                                <p>Example of "altrow" and "split"</p>
                             </div>
-                            <div class="full">
-                                <img src="photos/overall1.png" id="overallpics1"> <!-- UPDATE -->
-                                <img src="photos/overall2.png" id="overallpics2">
+                            
+                            <div>
+                                <img src="photos/overall2.png" id="overallpics2" alt="CSS SCREENSHOT 1">
+                                <p>CSS stylings for "altrow" and "split"</p>
                             </div>
                         </div>
                     </div>
@@ -69,8 +71,15 @@
                     <div id="fifty">
                         <div class="center" id="developed">
                             <div class="full">
-                                <img src="photos/overall1.png" id="overallpics1"> <!-- UPDATE -->
-                                <img src="photos/overall2.png" id="overallpics2">
+                                <div>
+                                    <img src="photos/overall3.png" id="overallpics1" alt="HTML SCREENSHOT 2">
+                                    <p>Example of a 50/50 split "altrow"</p>
+                                </div>
+                                
+                                <div>
+                                    <img src="photos/overall4.png" id="overallpics2" alt="CSS SCREENSHOT 2">
+                                    <p>CSS styling for "row" and "altrow"</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -115,7 +124,9 @@
                             Then comes another "split" div, with a 50/50 split using the "fifty" id. On 
                             the left side is a "center" div which centers all content vertically and stacks
                             them in a column using display: inline instead of flex. A h3 tag and an image are contained.
-                            The right side has a p tag containing text describing my background and life in Dubbo.
+                            The right side has a p tag containing text describing my background and life in Dubbo. Inside the 
+                            "p" tag are several "span" tags with the class ".placeSpan" - any time a place that is significant 
+                            to me is mentioned, I include it in this span tag to make these places stand out to the reader.
 
                             <br> <br>
 
@@ -134,7 +145,17 @@
                         </p>
                     </div>
                     <div id="fifty">
-                        <p>IMAGE</p>
+                        <div class="center" id="developed">
+                            <div>
+                                <img src="photos/overall5.png" id="overallpics1" alt="HTML SCREENSHOT 3">
+                                <p>Example of ordered lists</p>
+                            </div>
+                            
+                            <div>
+                                <img src="photos/overall6.png" id="overallpics1" alt="HTML SCREENSHOT 4">
+                                <p>Implementation of "carousel"</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -146,7 +167,17 @@
             <div class="altrow">
                 <div class="split">
                     <div id="fifty">
-                        <p>LOREM IPSUM</p>
+                        <div class="center" id="developed">
+                            <div>
+                                <img src="photos/overall7.png" id="overallpics1" alt="HTML SCREENSHOT 5">
+                                <p>Example of a 40/20/40 split "altrow"</p>
+                            </div>
+                            
+                            <div>
+                                <img src="photos/overall8.png" id="overallpics1" alt="HTML SCREENSHOT 6">
+                                <p>Example of an unordered list</p>
+                            </div>
+                        </div>
                     </div>
                     <div id="fifty">
                         <p>All pages henceforth have a page header with the same styling as the index page one, 
@@ -186,7 +217,7 @@
             <div class="altrow">
                 <div class="split">
                     <div id="fifty">
-                        <p>The Future page's heading reads "My future with computing". Below this is an "altrow" tag with a h3 and a 
+                        <p class="subtext">The Future page's heading reads "My future with computing". Below this is an "altrow" tag with a h3 and a 
                             centered p tag inside. There is a subtitle called "Full Stack Development" above a 70/30 "split" div, with 
                             the left side containing text and the right side having an image. Below this is another subtitle called 
                             "Things I want to learn" with another 50/50 split div below it. On the left side is a centered h2 and an 
@@ -194,7 +225,17 @@
                             of importance, as elaborated on the right side. </p>
                     </div>
                     <div id="fifty">
-                        <p>IMAGE</p>
+                        <div class="center" id="developed">
+                            <div>
+                                <img src="photos/overall9.png" id="overallpics1" alt="HTML SCREENSHOT 7">
+                                <p>First half of Future page HTML Code</p>
+                            </div>
+                            
+                            <div>
+                                <img src="photos/overall10.png" id="overallpics1" alt="HTML SCREENSHOT 8">
+                                <p>Second half of Future page HTML Code</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -206,8 +247,17 @@
             <div class="altrow">
                 <div class="split">
                     <div id="fifty">
-                        <p>LOREM IPSUM
-                        </p>
+                        <div class="center" id="developed">
+                            <div>
+                                <img src="photos/overall11.png" id="overallpics1" alt="HTML SCREENSHOT 9">
+                                <p>Part of HTML table</p>
+                            </div>
+                            
+                            <div>
+                                <img src="photos/overall12.png" id="overallpics1" alt="HTML SCREENSHOT 10">
+                                <p>Example of "br" tag use and special character "&lt;"</p>
+                            </div>
+                        </div>
                     </div>
                     <div id="fifty">
                         <p>The comments page is characterised by the "Comments!" page heading, followed by 5 similar groups of blocks.
@@ -515,6 +565,12 @@
                         <td>ID</td>
                         <td>Sets background color to pink</td>
                         <td>Used to indicate active web page</td>
+                      </tr>
+                      <tr>
+                        <td>.placeSpan</td>
+                        <td>Class</td>
+                        <td>Sets color of text to purple</td>
+                        <td>Styles in-text span tags to change the text color to purple</td>
                       </tr>
                 </table>
             </div>
